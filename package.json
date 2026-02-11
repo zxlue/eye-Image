@@ -7,7 +7,7 @@
 	"type": "module",
 	"scripts": {
 		"check": "tsc --noEmit",
-		"build": "node scripts/build.js"
+		"build": "node scripts/build.js && unzip -o dist/worker.zip -d dist/ && cp dist/worker.js dist/_worker.js"
 	},
 	"devDependencies": {
 		"@eslint/css": "^0.8.1",
